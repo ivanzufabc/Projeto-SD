@@ -5,7 +5,7 @@ USE ieee.numeric_std.ALL;
 ENTITY vending_machine IS
     GENERIC
     (
-        div_num         : INTEGER := 22
+        div_num         : INTEGER := 23
     );
     PORT (
         CLOCK_ADC_10    : in  STD_LOGIC;
@@ -141,5 +141,6 @@ BEGIN
     display(5) <= vm_state(0);
     HEX0 <= segments(5) WHEN display(5) = '1' ELSE
             segments(0);
+
 
 END behavioral;
