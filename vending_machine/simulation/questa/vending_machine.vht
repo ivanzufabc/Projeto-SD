@@ -87,7 +87,8 @@ BEGIN
     SW => SW
     );
     init : PROCESS                                               
-    -- variable declarations                                     
+    -- seleciona o caso de teste baseado na soma dos valores das moedas
+    -- opções: 25, 30, 35, 40, 45
         VARIABLE test_case : INTEGER := 40;
     BEGIN                                                        
             -- code that executes only once                      
@@ -314,4 +315,5 @@ BEGIN
             WAIT;
         END IF;
     END PROCESS always;                                          
+
 END vending_machine_arch;
